@@ -4,7 +4,7 @@ conn = sqlite3.connect("cars.db")
 cursor = conn.cursor()
 
 cursor.execute("""CREATE TABLE inventory
-                    (Make INT, Model TEXT, Quantity INT)
+                    (Make TEXT, Model TEXT, Quantity INT)
                     """)
 
 conn.close()
