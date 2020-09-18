@@ -17,7 +17,6 @@ with sqlite3.connect("new.db") as koneksi:
                 ('Austin', 'TX', 800000),
                 ('Detroit', 'MI', 700000)
             ]
-
     c.executemany("INSERT INTO population VALUES(?, ?, ?)", cities)
     c.execute("SELECT * FROM population WHERE population > 1000000")
 
